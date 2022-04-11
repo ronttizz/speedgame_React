@@ -1,5 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+}
+
+.App {
+  text-align: center;
+  padding: 5rem;
+  width: 100vw;
+  background: rgb(151, 0, 0);
+  display: flex;
+  justify-content: center;
+}
+
+.game {
+  border: 3px solid red;
+  width: fit-content;
+  padding: 2rem 4rem;
+  border-radius: 7px;
+}
+
+.scorecounter {
+  margin: 5rem;
+}
+
+.buttonrow {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
