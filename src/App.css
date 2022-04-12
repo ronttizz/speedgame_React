@@ -18,9 +18,12 @@
 
 .game {
   border: 3px solid red;
-  width: fit-content;
-  padding: 2rem 4rem;
+  width: 35rem;
+  padding: 5rem 4rem;
   border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .scorecounter {
