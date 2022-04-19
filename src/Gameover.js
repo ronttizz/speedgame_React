@@ -9,7 +9,7 @@ const Gameover = (props) => {
     message = "Getting there!";
   } else if (props.score <= 20) {
     message = "You are really good";
-  } else if (props.score >= 30) {
+  } else if (props.score >= 20) {
     message = "INSANE SCORE";
   }
 

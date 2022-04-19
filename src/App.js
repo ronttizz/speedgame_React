@@ -32,7 +32,7 @@ class App extends Component {
     showGameOver: false, // gameover modal bool
     gameStarted: false, // if game has started
     clicked: false, // stores info if current circle is clicked
-    pace: 1000, // stores the pace how fast circles are changing in ms (milliseconds)
+    pace: 1500, // stores the pace how fast circles are changing in ms (milliseconds)
     rounds: 0, // stores number of circles missed
     maxRounds: 3, // stores how many rounds player can miss
     difficulty: null, // difficulty for later use, not in use now
@@ -69,9 +69,9 @@ class App extends Component {
   };
 
   clickHandler = (id) => {
-    this.clickPlay();
     if (this.state.gameStarted) {
       if (this.state.current === id && !this.state.clicked) {
+        this.clickPlay();
         this.setState({
           ...this.state,
           score: this.state.score + 1,
@@ -98,7 +98,7 @@ class App extends Component {
     this.setState({
       current: nextActive,
       clicked: false,
-      pace: this.state.pace * 0.9,
+      pace: this.state.pace * 0.95,
       rounds: this.state.rounds + 1,
     });
 
